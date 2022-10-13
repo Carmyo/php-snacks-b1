@@ -44,3 +44,38 @@ var_dump(explode(".", $paragraph ));
 <p><?= $toSplit ?></p>
 
 <!-- Snack 5 -->
+
+<?php
+$class = [
+   "StudentOne" => [
+      "Name" => "Tizio"
+      "Surname" => "Rossi"
+      "Valutation" => [
+         "Math" => 4,
+         "English" => 7,
+         "Story" => 7,
+         "Sience" => 5,
+      ]
+      ],
+   "StudentTwo" => [
+      "Name" => "Caio"
+      "Surname" => "Verdi"
+      "Valutation" => [
+         "Math" => 8,
+         "English" => 8,
+         "Story" => 8,
+         "Sience" => 9,
+      ],
+   ],
+   "StudentThree" => [
+      "Name" => "Sempronio"
+      "Surname" => "Gialli"
+      "Valutation" => [
+         "Math" => 3,
+         "English" => 3,
+         "Story" => 2,
+         "Sience" => 4,
+      ]
+   ]    
+]
+?>
