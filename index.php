@@ -48,8 +48,8 @@ var_dump(explode(".", $paragraph ));
 <?php
 $class = [
    "StudentOne" => [
-      "Name" => "Tizio"
-      "Surname" => "Rossi"
+      "Name" => "Tizio",
+      "Surname" => "Rossi",
       "Valutation" => [
          "Math" => 4,
          "English" => 7,
@@ -58,8 +58,8 @@ $class = [
       ]
       ],
    "StudentTwo" => [
-      "Name" => "Caio"
-      "Surname" => "Verdi"
+      "Name" => "Caio",
+      "Surname" => "Verdi",
       "Valutation" => [
          "Math" => 8,
          "English" => 8,
@@ -68,8 +68,8 @@ $class = [
       ],
    ],
    "StudentThree" => [
-      "Name" => "Sempronio"
-      "Surname" => "Gialli"
+      "Name" => "Sempronio",
+      "Surname" => "Gialli",
       "Valutation" => [
          "Math" => 3,
          "English" => 3,
