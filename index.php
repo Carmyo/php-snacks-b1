@@ -1,4 +1,4 @@
-<!-- Snack 1 -->
+<!-- Snack 1  Olimpia Milano - Cantù | 55-60 -->
 
 <?php
 $match = [
@@ -26,10 +26,31 @@ $match = [
 ];
 var_dump($match);
 ?>
+  <?php
+    for ($i=0; $i < count($match); $i++){
+        $match = $matchToPrint[$i];
+        ?>
+        <div>
+         <p><?= $matchToPrint['homeTeam'] ?> -<?=$matchToPrint['awayTeam'] ?> | <?= $matchToPrint['homeTeamPoints'] ?>-<?= $matchToPrint['awayTeamPoints'] ?></p>
+        </div>
+        <?php
+    }
+?>
 
-<p><? $match ?></p>
+
+
 
 <!-- Snack 2 -->
+<?php 
+$Name = $_GET['name'];
+$Mail = $_GET['mail'];
+$Age = $_GET['age'];
+if ($name == "Carlo") {
+   echo "Yes";
+}
+
+?>
+
 
 <!-- Snack 3 -->
 
@@ -47,35 +68,32 @@ var_dump(explode(".", $paragraph ));
 
 <?php
 $class = [
-   "StudentOne" => [
+    [
       "Name" => "Tizio",
       "Surname" => "Rossi",
-      "Valutation" => [
-         "Math" => 4,
-         "English" => 7,
-         "Story" => 7,
-         "Sience" => 5,
-      ]
+      "Valutation" => [4,7,7,5,]
+       
       ],
-   "StudentTwo" => [
+    [
       "Name" => "Caio",
       "Surname" => "Verdi",
-      "Valutation" => [
-         "Math" => 8,
-         "English" => 8,
-         "Story" => 8,
-         "Sience" => 9,
-      ],
+      "Valutation" => [8,8,8,9]
    ],
-   "StudentThree" => [
+    [
       "Name" => "Sempronio",
       "Surname" => "Gialli",
-      "Valutation" => [
-         "Math" => 3,
-         "English" => 3,
-         "Story" => 2,
-         "Sience" => 4,
+      "Valutation" => [3,3,2,4]    
       ]
-   ]    
-]
-?>
+    ];
+
+      for($i=0; $i < count($class); $i++){
+         $student = $class[$i];
+         $average = array_sum($student['Valutation']) / count($student['Valutation']);   
+         ?>
+         <div>
+            <p><?=$student['Name']?> <?= $student['Surname']?> <?=round($average)?></p>
+            <p></p>
+         </div>   
+         <?php
+      }
+      ?>
